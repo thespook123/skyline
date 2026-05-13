@@ -1,4 +1,4 @@
-name: Upload Release
+﻿name: Upload Release
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: devkitpro/devkita64:latest
+    container: devkitpro/devkita64:20250728
     steps:
     - name: Clone repo
       run: git clone --recurse-submodules $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
